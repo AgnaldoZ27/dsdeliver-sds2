@@ -7,7 +7,7 @@ function Home() {
     return (
         <>
             <div className="home-container">
-                <div className="homw-content">
+                <div className="home-content">
                     <div className="home-actions">
                         <h1 className="home-title">
                             Faça seu pedido <br /> que entregamos <br /> pra você!

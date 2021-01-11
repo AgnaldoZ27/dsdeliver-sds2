@@ -20,7 +20,7 @@ type Props = {
     onChangeLocation: (location: OrderLocationData) => void;
 }
 
-function OrderLocation({onChangeLocation}:Props) {
+function OrderLocation({ onChangeLocation }: Props) {
     const [address, setAddress] = useState<Place>({
         position: initialPosition
     });
@@ -45,8 +45,8 @@ function OrderLocation({onChangeLocation}:Props) {
     const handleChangeSelect = (place: Place) => {
         setAddress(place);
         onChangeLocation({
-          latitude: place.position.lat,
-           longitude: place.position.lng,
+            latitude: place.position.lat,
+            longitude: place.position.lng,
             address: place.label!
         });
     };
@@ -79,7 +79,7 @@ function OrderLocation({onChangeLocation}:Props) {
                         </Popup>
                     </Marker>
                 </MapContainer>
-)
+
             </div>
         </div>
     )
