@@ -34,7 +34,7 @@ export default function OrderCard({ order }: Props) {
         <View style={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.orderName}>Pedido {order.id}</Text>
-                <Text style={styles.orderPrice}>R$ {formatPrice(order.total)} </Text>
+                <Text style={styles.orderPrice}> {formatPrice(order.total)} </Text>
             </View>
             <Text style={styles.text}>{dateFromNow(order.moment)}</Text>
             <View style={styles.productsList}>
